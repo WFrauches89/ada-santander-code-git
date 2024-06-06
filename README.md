@@ -2,8 +2,5 @@
 
 ### Nova alteração no Readme
 
-#### Nova alteração no Readme
+#### Processo para pull
 
-### Nova alteração no Readme
-
-#### Nova alteração no Readme
