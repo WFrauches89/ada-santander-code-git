@@ -11,7 +11,7 @@ public class Main {
 
         cachorro1.latir();
 
-        var sentimentoAtualdoCachorro = cachorro1.interagirComCachorro("carinhO");
+        var sentimentoAtualdoCachorro = cachorro1.interagirComCachorro("CarinhO");
 
         System.out.printf("O %s está se sentindo %s\n",cachorro1.nome,sentimentoAtualdoCachorro);
 
