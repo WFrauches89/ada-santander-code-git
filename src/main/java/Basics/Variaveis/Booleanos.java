@@ -1,4 +1,4 @@
-package Variaveis;
+package Basics.Variaveis;
 
 public class Booleanos {
 

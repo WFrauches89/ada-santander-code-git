@@ -1,4 +1,4 @@
-package Repeticoes;
+package Basics.Repeticoes;
 
 public class ForRep {
     public static void main(String[] args) {

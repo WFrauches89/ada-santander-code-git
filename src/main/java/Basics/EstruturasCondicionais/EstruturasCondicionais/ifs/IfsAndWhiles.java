@@ -1,4 +1,4 @@
-package EstruturasCondicionais.ifs;
+package Basics.EstruturasCondicionais.EstruturasCondicionais.ifs;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package EstruturasCondicionais.stringsAndDates;
+package Basics.EstruturasCondicionais.EstruturasCondicionais.stringsAndDates;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
