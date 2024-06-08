@@ -1,20 +1,8 @@
-package POO;
+package POO.Animais;
 
-public class Cachorro {
+public class Cachorro extends Animal {
 
-    public String nome;
 
-    public String cor;
-
-    public double altura;
-
-    public double peso;
-
-    public String sentimentoDoCachorro;
-
-    public void latir(){
-        System.out.println("Au Au Au");
-    }
 
     public String pegarBolinha() {
         return "pegou a bolinha";
@@ -23,14 +11,19 @@ public class Cachorro {
     public String interagirComCachorro(String acaoRecebida) {
 
         switch (acaoRecebida.toUpperCase()){
-            case "CARINHO": this.sentimentoDoCachorro = "feliz";
+            case "CARINHO": this.sentimentoDoAnimal = "feliz";
             break;
-            case "ORDEM": this.sentimentoDoCachorro = "irritado";
+            case "ORDEM": this.sentimentoDoAnimal = "irritado";
             break;
-            default: this.sentimentoDoCachorro = "neutro";
+            default: this.sentimentoDoAnimal = "neutro";
 
         }
-        return sentimentoDoCachorro.toUpperCase();
+        return sentimentoDoAnimal.toUpperCase();
+    }
+
+    @Override
+    public void soar() {
+        System.out.println("Au Au Au");
     }
 //      Acima com SWITCH CASE
 //    public String interagirComCachorro(String acaoRecebida) {
@@ -43,6 +36,16 @@ public class Cachorro {
 //        }
 //        return sentimentoDoCachorro.toUpperCase();
 //    }
+
+
+
+    //PPontos
+    /*
+    Conhecer sobre Garbage collectors em Java
+    Estudar Debug
+    Entender STATIC em java
+
+     */
 
 
 }
