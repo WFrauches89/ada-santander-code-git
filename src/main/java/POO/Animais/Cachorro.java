@@ -41,9 +41,14 @@ public class Cachorro extends Animal {
 
     //PPontos
     /*
-    Conhecer sobre Garbage collectors em Java
+    Conhecer sobre Garbage collectors em Java - Limpador automático de de objetos não referenciados - liberar espaço de memória no Java
     Estudar Debug
     Entender STATIC em java
+    literals - int 28563987 = int 28_563_987 desta forma facilita a leitura e não altera o valor real declarado...
+
+    Conhecer varargs - Possibilita criar um método que aceita diversos args public void somar( int args... ) { logica de calculador somar }
+
+    Herança e acoplamento -
 
      */
 
