@@ -1,4 +1,4 @@
-package EstruturasDeDados.ProblemSolve;
+package EstruturasDeDados.Pilha.ProblemSolve;
 
 import EstruturasDeDados.Pilha.Stack;
 
