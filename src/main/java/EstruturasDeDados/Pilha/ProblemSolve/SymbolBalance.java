@@ -3,7 +3,7 @@ package EstruturasDeDados.Pilha.ProblemSolve;
 import java.util.Set;
 import java.util.Stack;
 
-public class SianlBalance {
+public class SymbolBalance {
 
 
     public static boolean solve(String exp) {

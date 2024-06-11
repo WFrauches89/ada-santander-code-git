@@ -37,7 +37,7 @@ public class Tree {
             DFS
 
   */
-    private Node root;
+public Node root;
 
 
     public void insert(int valor){
