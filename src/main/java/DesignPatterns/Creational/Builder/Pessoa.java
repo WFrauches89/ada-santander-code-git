@@ -1,5 +1,7 @@
 package DesignPatterns.Creational.Builder;
 
+import java.time.LocalDate;
+
 public class Pessoa {
 
     private String nome;
@@ -12,9 +14,9 @@ public class Pessoa {
 
     private String apelido;
 
-    private String dataNascimento;
+    private LocalDate dataNascimento;
 
-    public Pessoa(String nome, String sobrenome, String documento, String email, String apelido, String dataNascimento) {
+    private Pessoa(String nome, String sobrenome, String documento, String email, String apelido, LocalDate dataNascimento) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.documento = documento;
@@ -63,11 +65,11 @@ public class Pessoa {
         this.apelido = apelido;
     }
 
-    public String getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(String dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -82,4 +84,55 @@ public class Pessoa {
                 ", dataNascimento='" + dataNascimento + '\'' +
                 '}';
     }
+
+    public static class BuilderPessoa {
+
+        private String nome;
+
+        private String sobrenome;
+
+        private String documento;
+
+        private String email;
+
+        private String apelido;
+
+        private LocalDate dataNascimento;
+
+        public BuilderPessoa nome(String nome) {
+            this.nome = nome;
+            return this; //desta forma estamos retornando o ppróprio objeto - Fluência de Método
+        }
+
+        public BuilderPessoa sobrenome(String sobrenome) {
+            this.sobrenome = sobrenome;
+            return this;
+        }
+
+        public BuilderPessoa documento(String documento) {
+            this.documento = documento;
+            return this;
+        }
+
+        public BuilderPessoa email(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public BuilderPessoa apelido(String apelido) {
+            this.apelido = apelido;
+            return this;
+        }
+
+        public BuilderPessoa dataNascimento(LocalDate dataNascimento) {
+            this.dataNascimento = dataNascimento;
+            return this;
+        }
+
+        public Pessoa build(){
+            return new Pessoa(nome, sobrenome, documento, email, apelido,dataNascimento);
+        }
+
+    }
+
 }
