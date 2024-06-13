@@ -12,20 +12,18 @@ public class Geral {
 
     Creational - Criação de objetos.
     -Builder
-
-
-
-
+    -Factory
+    -Prototype
+    -Singleton
 
     Structural -> Relação entre objetos e iteração entre eles.
-
-
-
-
+    -Proxy
+    -Adapter
 
     Behavioral -> Comunicação entre os objetos, responsabilidades e algoritmos.
-
-
+    -Strategy
+    -Chain Of Responsability
+    -Template Method
 
 
 
