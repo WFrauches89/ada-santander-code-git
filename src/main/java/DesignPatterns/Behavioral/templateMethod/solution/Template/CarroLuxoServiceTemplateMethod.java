@@ -11,7 +11,7 @@ public class CarroLuxoServiceTemplateMethod extends CarroReparoServiceTemplateMe
     }
 
     @Override
-    boolean veiculoTemReparo() {
+    protected boolean veiculoTemReparo() {
             return veiculoReparo.getPorcentagemDano() <=50;
     }
 }

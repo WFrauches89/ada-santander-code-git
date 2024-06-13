@@ -26,7 +26,7 @@ public abstract class CarroReparoServiceTemplateMethod {
         System.out.println("Notificando seguradora para reparo...");
     }
 
-    abstract boolean veiculoTemReparo();
+    protected abstract boolean veiculoTemReparo();
 
     private void analisarDano() {
         System.out.println("Analisando dano...");
